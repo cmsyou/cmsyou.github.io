@@ -1,0 +1,13 @@
+<svg   width="48px"   height="48px"  viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>存储服务-48px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="存储服务-48px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#444444" opacity="0" x="0" y="0" width="48" height="48"></rect>
+        <g id="Group" transform="translate(3.000000, 0.000000)">
+            <path d="M21,2.30350221 L2,13.1606451 L2,34.8393549 L21,45.6964978 L40,34.8393549 L40,13.1606451 L21,2.30350221 Z M21,0 L42,12 L42,36 L21,48 L6.21724894e-15,36 L-7.10542736e-15,12 L21,0 Z" id="Polygon-3" fill="#334966" fill-rule="nonzero"></path>
+            <polygon id="Polygon-3" fill="#00A4FF" points="21 11 32 17.5 32 30.5 21 37 10 30.5 10 17.5"></polygon>
+            <path d="M41.0077221,12.2635137 L40,12.8393549 L40,13.1606451 L41.0077221,13.7364863 L41.4285714,13 L41.0077221,12.2635137 Z M39.7188711,13 L21,2.30350221 L2.28112887,13 L21,23.6964978 L39.7188711,13 Z M2,13.1606451 L2,12.8393549 L0.992277877,12.2635137 L0.571428571,13 L0.992277877,13.7364863 L2,13.1606451 Z M22,25.4285714 L22,47 L20,47 L20,25.4285714 L1.33226763e-15,14 L0,12 L21,0 L42,12 L42,14 L22,25.4285714 Z" id="Combined-Shape" fill="#334966" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

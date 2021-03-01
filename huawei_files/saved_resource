@@ -1,0 +1,1 @@
+{"versions":[{"min_version":"","links":[{"rel":"self","href":"https://ecs.cn-east-2.myhuaweicloud.com/v2/"}],"id":"v2.0","updated":"2011-01-21T11:33:21Z","version":"","status":"SUPPORTED"},{"min_version":"2.1","links":[{"rel":"self","href":"https://ecs.cn-east-2.myhuaweicloud.com/v2.1/"}],"id":"v2.1","updated":"2013-07-23T11:33:21Z","version":"2.60","status":"CURRENT"}]}

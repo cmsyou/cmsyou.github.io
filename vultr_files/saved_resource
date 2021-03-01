@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vultr - Looking Glass</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico?v=2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vultr Looking Glass">
+    <meta name="keywords" content="Vultr Speed Test, Vultr Speed Tests, how fast are vultr's servers, fastest vps, ping, ping6, mtr, mtr6, traceroute, traceroute6">
+    <meta name="author" content="Telephone">
+    <!-- Styles -->
+    <link href="assets/css/style.css?v=1" rel="stylesheet">
+    <link href="assets/css/select2.min.css" rel="stylesheet">
+    <link href="assets/css/custom.min.css" rel="stylesheet"/>
+  </head>
+  <body class="">
+    <div class="site site--full">
+        <header class="site-banner banner--shape banner banner--fullpage">
+          <div class="container">
+              <div class="banner__brand">
+                  <a href="/" data-logo-video="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2500 448" width="2500" height="448" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%;">
+                      <image xlink:href="assets/logo__on-dark.svg" width="2500" height="448"/>
+                    </svg>
+                  </a>
+              </div>
+              <div class="banner__content">
+                <div class="m-w-lg m-h-a test-speed">
+                  <div class="test-speed__top">
+                      <span class="test-speed__title">
+                          Network looking glass
+                      </span>
+                      <div class="test-speed__ip">
+                          <span class="test-speed__ip-label">
+                              Your IP Address:
+                          </span>
+                          <div data-clipboard-action="copy" target="#userip" class="copyIP tooltip">
+                            <a href="#tests"><span class="test-speed__ip-value h5" id="userip">119.8.234.121</span></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="test-speed__box box">
+                      <div class="box__content">
+                          <h5>Server Location</h5>
+                          <div class="form-group form-group--locations">
+                                                          <select name="server-location" id="serverlocation">
+                                <optgroup Label="North America">
+                                                                      <option value="ATL" >Atlanta</option>
+                                                                        <option value="ORD" >Chicago</option>
+                                                                        <option value="DFW" >Dallas</option>
+                                                                        <option value="LAX"  selected="selected" >Los Angeles</option>
+                                                                        <option value="MIA" >Miami</option>
+                                                                        <option value="EWR" >New Jersey</option>
+                                                                        <option value="SEA" >Seattle</option>
+                                                                        <option value="SJC" >Silicon Valley</option>
+                                                                        <option value="YTO" >Toronto</option>
+                                                                  </optgroup>
+                                <optgroup Label="Europe">
+                                                                        <option value="AMS" >Amsterdam</option>
+                                                                        <option value="FRA" >Frankfurt</option>
+                                                                        <option value="LHR" >London</option>
+                                                                        <option value="CDG" >Paris</option>
+                                                                  </optgroup>
+                                <optgroup Label="Asia">
+                                                                        <option value="ICN" >Seoul</option>
+                                                                        <option value="SGP" >Singapore</option>
+                                                                        <option value="NRT" >Tokyo</option>
+                                                                  </optgroup>
+                                <optgroup Label="Australia">
+                                                                        <option value="SYD" >Sydney</option>
+                                                                  </optgroup>
+                              </select>
+                          </div>
+                          <h5>Network Information</h5>
+                          <ul class="list">
+                              <li>Test IPv4: <a href="#tests" id="useripv4">108.61.219.200</a></li>
+                              <li>Test IPv6: <a href="#tests" id="useripv6">2001:19f0:6000:8002:5054:ff:fe73:3600</a></li>
+                              <li>Test files:  <a href="/vultr.com.100MB.bin" id="testfile">100MB</a> <a href="/vultr.com.1000MB.bin" id="testfile">1GB</a></li>
+                          </ul>
+                          <div class="box box--gradient-secondary" style="display: block;">
+                            <div class="row">
+                              <form class="box__content rail" id="networktest" action="#results" method="post">
+                                <input class="form-control" id="host" value="" placeholder="Host of IP address">
+                                <select name="cmd" id="selector" class="form-control">
+                                    <option value="mtr">mtr</option>
+                                    <option value="mtr6">mtr6</option>
+                                    <option value="ping" selected="selected">ping</option>
+                                    <option value="ping6">ping6</option>
+                                    <option value="traceroute">traceroute</option>
+                                    <option value="traceroute6">traceroute6</option>
+                                </select>
+                                <button type="submit" id="submit" name="submit" class="btn btn--primary"><span class="btn__text">Run Test</span></button>
+                              </form>
+                            </div>
+                            <div class="row" id="results" style="display: none;">
+                              <div id="results_wrapper">
+                                <span id="cli-legend">$<span id="command"></span></span>
+                                <pre id="response" style="display:none;"></pre>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="banner__background">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1903 556">
+                  <path class="svg-banner-shape" d="M753.1,434.2c110.6,63.7,277.7,70.6,373.4,15.4L1905,0v555.9H0V0.2L753.1,434.2z"></path>
+              </svg>
+          </div>
+      </header>
+    </div>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/select2.full.min.js"></script>
+    <script src="assets/js/XMLHttpRequest.min.js"></script>
+    <script src="assets/js/LookingGlass.min.js?v=6"></script>
+    <script src="assets/js/clipboard.js"></script>
+</body>
+</html>

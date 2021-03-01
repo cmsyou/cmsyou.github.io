@@ -1,0 +1,11 @@
+var _URLS = {
+  "ap-beijing": "http://cos.ap-beijing.myqcloud.com",
+  "ap-shanghai": "http://cos.ap-shanghai.myqcloud.com",
+  "ap-guangzhou": "http://cos.ap-guangzhou.myqcloud.com",
+  "ap-chengdu": "http://cos.ap-chengdu.myqcloud.com",
+  "ap-hongkong": "http://cos.ap-hongkong.myqcloud.com",
+  "ap-seoul": "http://cos.ap-seoul.myqcloud.com",
+  "ap-singapore": "http://cos.ap-singapore.myqcloud.com",
+  "eu-frankfurt": "https://oss-cn-hongkong.aliyuncs.com",
+  "na-toronto": "http://cos.na-toronto.myqcloud.com",
+};

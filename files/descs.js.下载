@@ -1,0 +1,11 @@
+let _DESCS = {
+  'ap-beijing':              '北京(Beijing)',
+  'ap-shanghai':              '上海(Shanghai)',
+  'ap-guangzhou':         '广州(Guangzhou)',
+  'ap-chengdu':             '成都(Chengdu)',
+  'ap-hongkong':         '香港(Hongkong)',
+  'ap-seoul':    '首尔(Seoul)',
+  'ap-singapore':           '新加坡(Singapore)',
+  'eu-frankfurt':            '法兰克福(Frankfurt)',
+  'na-toronto':            '多伦多(Toronto)',
+};

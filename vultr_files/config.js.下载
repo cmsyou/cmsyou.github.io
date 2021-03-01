@@ -1,0 +1,17 @@
+var _URLS = {
+  "hnd-jp": "http://hnd-jp-ping.vultr.com",
+  "sgp": "http://sgp-ping.vultr.com",
+  "syd-au": "http://syd-au-ping.vultr.com",
+  "fra-de": "http://fra-de-ping.vultr.com",
+  "par-fr": "http://par-fr-ping.vultr.com",
+  "lon-gb": "http://lon-gb-ping.vultr.com/",
+  "ams-nl": "http://ams-nl-ping.vultr.com",
+  "sjo-ca-us": "http://sjo-ca-us-ping.vultr.com",
+  "lax-ca-us": "http://lax-ca-us-ping.vultr.com",
+  "il-us": "http://il-us-ping.vultr.com",
+  "wa-us": "http://wa-us-ping.vultr.com",
+  "fl-us": "http://fl-us-ping.vultr.com",
+  "nj-us": "http://nj-us-ping.vultr.com",
+  "tx-us": "http://tx-us-ping.vultr.com",
+  "ga-us": "http://ga-us-ping.vultr.com",
+};

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="icon" type="image/png" href="./files/icon.png">
+  
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>华为云Ping-华为云服务器哪个地区节点好_ping一下就知道了</title>  
+  <meta name="keywords" content="华为云ping,华为云全球节点服务器,华为云服务器节点,华为云节点服务器数量,华为云服务器区域选择">
+  <meta name="description" content="为网友提供批量Ping测试华为云全球各区域速度的页面，方便网友快速选购区域节点的服务器。">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="applicable-device" content="pc,mobile">
+  <meta http-equiv="Cache-Control" content="no-transform"> 
+  <link rel="stylesheet" href="./huawei_files/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="./huawei_files/css" type="text/css">
+  
+<link rel="stylesheet" href="./huawei_files/layui.css">
+
+  <script type="text/javascript" async="" src="./huawei_files/analytics.js.下载"></script><script src="./huawei_files/push.js.下载"></script><script src="./huawei_files/hm.js.下载"></script><script defer="" src="./huawei_files/material.min.js.下载"></script>
+<style>
+body, input {
+  font-family: 'Roboto', sans-serif;
+  background-color: #EFEFEF;
+  color: #d4d8d8;
+}
+
+.mdl-grid {
+  max-width: 1000px;
+}
+
+.mdl-data-table {
+  border: 0 transparent solid;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.mdl-data-table td, .mdl-data-table th, .mdl-data-table td div {
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mdl-data-table .top td:last-child {
+  background-color: #DEEDC8;
+}
+
+.mdl-data-table .top td:last-child > div:after {
+  background-color: #92C456;
+  bottom: 0;
+  content: ' ';
+  position: absolute;
+  right: 0;
+  width: 5px;
+  top: 0;
+}
+
+.mdl-data-table th {
+  color: white;
+  line-height: 30px;
+}
+
+.mdl-data-table th:last-child {
+  padding-right: 8px;
+  width: 40%;
+}
+
+ @media (max-width: 479px) {
+  .mdl-data-table th:last-child {
+    width: 40%;
+  }
+}
+
+.mdl-data-table thead {
+  background-color: #5F7D8C;
+}
+
+.mdl-data-table tbody tr:hover {
+  background-color: inherit;
+}
+
+a, a:visited {
+  color: #01BCD4;
+  text-decoration: none;
+}
+
+#pingimg {
+  display: none;
+  visibility: hidden;
+}
+
+.ribbon {
+  background-color: #283238;
+  left: 0;
+  height: 40vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+h1 {
+  color: white;
+  font-size: 26px;
+  margin-top: 45px;
+}
+
+h1 a, h1 a:visited {
+  color: white;
+  font-weight: inherit;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+p {
+  margin-bottom: 4px;
+}
+
+#stopstart {
+  background-color: #01BCD4;
+  color: white;
+  cursor: pointer;
+  height: 48px;
+  min-width: 48px;
+  position: absolute;
+  right: 24px;
+  top: -16px;
+  width: 48px;
+  z-index: 10;
+}
+
+@media (max-width: 679px) {
+  #stopstart {
+    height: 36px;
+    min-width: 36px;
+    right: 18px;
+    top: -10px;
+    width: 36px
+  }
+}
+
+.startstop-cell {
+  margin-bottom: 0;
+  margin-top: 0;
+  position: relative;
+}
+
+.results-cell {
+  min-height: 30vh;
+}
+
+.results-cell .region {
+  font-size: 11px;
+}
+
+#tweet-logo {
+  height: 30px;
+  width: 30px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 20px;
+
+}
+ 
+li {
+    float: left;
+}
+ 
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ 
+/*鼠标移动到选项上修改背景颜色 */
+li a:hover {
+    background-color: #111;
+}
+
+
+.navbar {
+    display:table;
+    margin:0 auto;
+}
+.navbar li {
+    display:table-cell;
+}
+.navbar li + li {
+    padding-left:20px;
+}
+
+
+/*固定在顶部 
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+*/
+
+</style>
+
+</head>
+
+<body>
+<!--
+<div style="position:relative; width:100%; height:100px; overflow:hidden">
+   <a rel="nofollow" href="https://www.aliyun.com/minisite/goods?userCode=xbifxhv7" target="_blank" title="腾讯云代金券免费领取">
+   <img src="image/2018shuang12.jpg" style="position:absolute; left:50%; top:0; width:1500px; height:100px; margin-left:-750px"/>
+   </a>
+</div>
+-->
+
+  <div class="mdl-layout mdl-js-layout">
+    <div class="ribbon"></div>
+    <main class="mdl-layout__content">
+<div class="navbar">
+<ul>
+<!-- 导航-->
+  <li><a target="_blank" href="https://ping33.com/">领代金券</a></li>   
+  <li><a target="_blank" href="https://ping33.com/aliyun/">阿里云</a></li>
+  <li><a target="_blank" href="https://ping33.com/tengxun/">腾讯云</a></li>
+  <li><a target="_blank" href="https://ping33.com/huawei/">华为云</a></li>
+  <li><a target="_blank" href="https://ping33.com/qiniu/">七牛云</a></li>  
+  <li><a target="_blank" href="https://ping33.com/bandwagonhost/">搬瓦工</a></li>
+  <li><a target="_blank" href="https://ping33.com/vultr/">vultr</a></li>
+  
+</ul>
+</div>
+
+
+<div id="dg" style="z-index: 9999; position: fixed ! important; right: 0px; margin: 100px 50px;">
+<a class="top-image" title="腾讯云限时秒杀" target="_blank" rel="nofollow" href="https://cloud.tencent.com/act/cps/redirect?redirect=1077&cps_key=8eb5bd7fecaebaa8c13d45dcda49294d&from=console">
+     <img alt="腾讯云限时秒杀" src="./huawei_files/20201201miaosha-1.png">
+     </a><br><br><a class="top-image" title="腾讯云代金券" target="_blank" rel="nofollow" href="https://cloud.tencent.com/act/cps/redirect?redirect=1040&cps_key=8eb5bd7fecaebaa8c13d45dcda49294d&from=console">
+     <img alt="腾讯云千元大礼包" src="./huawei_files/20190426tengxun2860.jpg">  
+     </a><table width="" 100%="" style="position: absolute; width:260px; right: 0px; top: 0px;">
+
+<!--
+     <a class="top-image" title="华为云双十一区" target="_blank" rel="nofollow" href="https://activity.huaweicloud.com/discount_area_v5/index.html?fromacct=58648921-0705-427d-aa7d-0f572225437b&utm_source=V1g3MDY4NTY=&utm_medium=cps&utm_campaign=201905">
+     <img alt="华为云双十一区" src="../image/20201029huaweishuang11.png"/>
+     </a>	
+-->	 
+	 	
+
+	 
+     
+</table>
+</div>
+<div id="dg" style="z-index: 9999; position: fixed ! important; left: 0px; margin: 100px 50px;">
+<a class="top-image" title="阿里云2000代金券" target="_blank" rel="nofollow" href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=xbifxhv7">
+     <img alt="阿里云2000代金券" src="./huawei_files/aliyundaijinqun2000.jpg">
+     </a><br><br><a class="top-image" title="阿里云老用户续费计划" target="_blank" rel="nofollow" href="https://www.aliyun.com/daily-act/ecs/care?userCode=xbifxhv7">
+     <img alt="阿里云老用户续费计划" src="./huawei_files/20201201laoyonghu-1.png">
+     </a><table width="" 100%="" style="position: absolute; width:260px; right: 0px; top: 0px;">
+
+     	 
+	 
+	 	 
+	 
+	 
+     
+<!--	 
+	 <a class="top-image" title="腾讯云星星海服务器" target="_blank" rel="nofollow" href="">
+     <img alt="腾讯云星星海服务器" src="../image/20200916tengxunxingxinghai-1.png"/>
+     </a> 
+-->	 	 
+
+</table>
+</div>
+
+
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--1-offset-tablet mdl-cell--3-offset-desktop">
+          <h1>测试您本机到<a target="_blank" rel="nofollow" href="https://activity.huaweicloud.com/discount_area_v5/index.html?fromacct=58648921-0705-427d-aa7d-0f572225437b&utm_source=V1g3MDY4NTY=&utm_medium=cps&utm_campaign=201905">华为云</a>各区域节点的延迟</h1>
+          <h6>超过10秒未加载，请刷新页面即可～</h6>
+        </div>
+        <div class="mdl-cell startstop-cell mdl-cell--6-col mdl-cell--1-offset-tablet mdl-cell--3-offset-desktop">
+          <button id="stopstart" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+            <i class="material-icons">play_arrow</i>
+          </button>
+        </div>
+        <div class="mdl-cell results-cell mdl-cell--6-col mdl-cell--1-offset-tablet mdl-cell--3-offset-desktop">
+          <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp mdl-color-text--grey-800">
+            <thead>
+              <tr>
+                <th>区域</th>
+                <th>延迟(越小越好)</th>
+              </tr>
+            </thead>
+            <tbody><tr class="top"><td class="regiondesc">西南-贵阳一<div class="region">cn-southwest-2</div></td><td class="result" id="cn-southwest-2"><div>87ms</div></td></tr><tr class=""><td class="regiondesc">华东-上海二<div class="region">cn-east-2</div></td><td class="result" id="cn-east-2"><div>90ms</div></td></tr><tr class=""><td class="regiondesc">亚太-香港<div class="region">ap-southeast-1</div></td><td class="result" id="ap-southeast-1"><div>91ms</div></td></tr><tr class=""><td class="regiondesc">华北-北京一<div class="region">cn-north-1</div></td><td class="result" id="cn-north-1"><div>92ms</div></td></tr><tr class=""><td class="regiondesc">华南-广州<div class="region">cn-south-1</div></td><td class="result" id="cn-south-1"><div>93ms</div></td></tr><tr class=""><td class="regiondesc">华东-上海一<div class="region">cn-east-3</div></td><td class="result" id="cn-east-3"><div>105ms</div></td></tr><tr class=""><td class="regiondesc">华北-北京四<div class="region">cn-north-4</div></td><td class="result" id="cn-north-4"><div>107ms</div></td></tr><tr class=""><td class="regiondesc">亚太-新加坡<div class="region">ap-southeast-3</div></td><td class="result" id="ap-southeast-3"><div>142ms</div></td></tr><tr class=""><td class="regiondesc">亚太-曼谷<div class="region">ap-southeast-2</div></td><td class="result" id="ap-southeast-2"><div>145ms</div></td></tr><tr class=""><td class="regiondesc">南非-约翰内斯堡<div class="region">af-south-1</div></td><td class="result" id="af-south-1"><div>245ms</div></td></tr><tr class=""><td class="regiondesc">东北-大连<div class="region">cn-northeast-1</div></td><td class="result" id="cn-northeast-1"><div>273ms</div></td></tr><tr class=""><td class="regiondesc">欧洲-巴黎<div class="region">eu-west-0</div></td><td class="result" id="eu-west-0"><div>934ms</div></td></tr></tbody>
+          </table>
+        </div>
+        <div style="color:#283238" class="about-content mdl-cell mdl-cell--6-col mdl-cell--1-offset-tablet mdl-cell--3-offset-desktop">
+          <div style="display:none"><center><a id="tweet-link" href="https://twitter.com/share?text=My%20lowest-latency%20%23Aliyun%20regions%20via%20ping33.com%3A%0Acn-southwest-2%20(87ms)%0Acn-east-2%20(90ms)%0Aap-southeast-1%20(91ms)" target="_blank"><img id="tweet-logo" src="./huawei_files/twitter.png" alt="Tweet your latencies"></a></center></div><br>
+          <h2>这是什么原理？</h2><br>
+          <p>您的浏览器向华为云全球各区域内的实例发出HTTP请求。显示请求和响应之间的中间时间。</p>
+          <p>受多种因素干扰，建议多刷新几次为准。</p>
+		  <p>为选择购买区域区域提供参考。</p>
+<p>
+</p><br><center>
+本站由<a rel="nofollow" href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=xbifxhv7" target="_blank">阿里云服务器ECS</a>驱动，如需购买，可领取一个<a rel="nofollow" href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=xbifxhv7" target="_blank">阿里云限量红包</a>
+</center>
+<center>
+<iframe src="./huawei_files/invite.html" style="width:0px;height:0px;"></iframe>
+<iframe src="./huawei_files/redirect.html" style="width:0px;height:0px;"></iframe>
+<p></p>
+          <img id="pingimg" src="./huawei_files/saved_resource">
+        </center></div>
+      </div>
+    </main>
+  </div>
+
+<script src="./huawei_files/config.js.下载"></script>
+<script src="./huawei_files/descs.js.下载"></script>
+
+<script src="./huawei_files/layui.js.下载"></script>
+
+<script type="text/javascript">
+// TODO: Show regions on a map, with lines overlayed according to ping times.
+// TODO: Add an option to contribute times and JS geolocation info to a public BigQuery dataset.
+// TODO: Re-add pings for GCS.
+// TODO: Add pings for GAE, GCF, GCR(?), etc.
+// TODO: Add pings for Cloud CDN (backed by GCE or GCS).
+
+
+
+const _MAX_RESULTS = 20; // Only consider most recent results.
+let _KEYS = [];
+let idx = 0;
+let _URLS_REVERSE = {}; // reverse of _URLS
+let results = {};
+for (k in _URLS) {
+  _KEYS.push(k);
+  _URLS_REVERSE[_URLS[k]] = k;
+  results[k] = [];
+}
+
+function median(arr) {
+  if (arr.length == 0) { return 0; }
+  let copy = arr.slice(0);
+  copy.sort();
+  return copy[Math.floor(copy.length/2)];
+}
+
+document.addEventListener('nextping', function() {
+  let id = _KEYS[idx];
+  idx = (idx+1)%_KEYS.length; // wrap around
+  let url = _URLS[id];
+
+  let img = document.getElementById('pingimg');
+  let start = new Date().getTime();
+  img.onload = function() {
+    let took = new Date().getTime()-start;
+    results[id].push(took);
+    if (results[id].length > _MAX_RESULTS) {
+      results[id].shift();
+    }
+    let a = median(results[id]);
+    let out = document.getElementById(id+'-result');
+    updateTable();
+    if (!stopped) {
+      document.dispatchEvent(new Event('nextping'));
+    }
+  };
+  img.onerror = img.onload;
+  img.src = url;
+});
+
+function updateTable() {
+  let medians = [];
+  for (k in results) {
+    medians.push([k, median(results[k])]);
+  }
+  medians.sort(function(a, b) {
+    if (a[1] < b[1]) { return -1; }
+    if (a[1] > b[1]) { return 1; }
+    return 0;
+  });
+
+  let html = '';
+  let tweet = 'My lowest-latency #Aliyun regions via ping33.com:';
+  let place = 0;
+  let top = 0;
+  for (var i = 0; i < medians.length; i++) {
+    let region = medians[i][0];
+    let latency = medians[i][1];
+    if (latency == 0) { continue; }
+    if (i == 0 && region === 'global') { top++; }
+    if (region != 'global') { place++; }
+    var cls = (i == top) ? 'top' : '';
+    var desc = _DESCS[region] || '';
+    html += '<tr class="'+cls+'"><td class="regiondesc">'+desc+'<div class="region">'+region+'</div></td>' +
+      '<td class="result" id="'+region+'"><div>'+latency+'ms</div></td></tr>';
+
+    if (place <= 3 && region != 'global') {
+      tweet += '\n'+region+' ('+latency+'ms)';
+    }
+  }
+  document.getElementsByTagName('tbody')[0].innerHTML = html;
+  document.getElementById('tweet-link').href = 'https://twitter.com/share?text='+encodeURIComponent(tweet);
+}
+
+let stopped = true;
+let ss = document.getElementById('stopstart');
+let st;
+ss.onclick = function() {
+  if (stopped) {
+    console.log('starting');
+    stopped = false;
+    ss.children[0].innerText = 'stop';
+    document.dispatchEvent(new Event('nextping'));
+    st = setTimeout(ss.onclick, 30000); // stop after 30s.
+  } else {
+    console.log('stopping');
+    stopped = true;
+    clearTimeout(st); // cancel the stop timeout, as it is stopped.
+    ss.children[0].innerText = 'play_arrow';
+  }
+};
+
+// Pre-load an image for each URL, then start pinging with results recorded.
+// This speeds up subsequent requests. Otherwise, the first request to each IP
+// takes double the RTT because it needs to establish a connection
+let images = Object.values(_URLS);
+let image;
+let remaining = images.length;
+for (let i = 0; i < images.length; i++) {
+  image = new Image();
+  image.onerror = function () {
+    remaining--;
+    if (remaining <= 0) {
+      ss.onclick();
+    }
+  };
+  image.src = images[i];
+}
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?51a70aa1985b726cfa0c0d982bdb9523";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./huawei_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-86115519-6');
+</script>
+
+          <script>
+             (function() {
+     var bp = document.createElement('script');
+     var curProtocol = window.location.protocol.split(':')[0];
+     if (curProtocol === 'https') {
+         bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+     } else {
+         bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+     }
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(bp, s);
+ })();
+          </script>
+</body></html>
